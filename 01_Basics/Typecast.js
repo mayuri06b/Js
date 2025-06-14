@@ -15,3 +15,7 @@ null -> 0
 "ahaj" -> false
 */
 
+console.log(+true); // answer = 1 
+
+// -----------------------------Operations In JavaScript ----------------------------
+
