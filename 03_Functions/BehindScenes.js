@@ -1,4 +1,9 @@
 // Global Execution Context 
+
+// JavaScript engine and the host environment.
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Execution_model
+
+
 /*
 Types of context 
 - Global Execution Context 
@@ -32,7 +37,7 @@ Step2 : cycle 1 -> <------------------------------------------------------------
 
   --------------------------------------------------------------------------------------------------------------------------------
   
-  for each function call a new Exection enviornment alsong with a thread is created 
+  for each function call a new Exection enviornment along with a thread is created 
             
 */          
 

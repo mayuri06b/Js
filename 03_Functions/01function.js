@@ -29,17 +29,19 @@ let anyObject = {
     name : "sam",
     age : 12
 }
+
 function handleObject(anyObject) {
     console.log(`Hii ${anyObject.name} your age is ${anyObject.age}`);
     
 }
+
 // in the same way u can handle the array as well 
 
 handleObject(anyObject)
 
 // ---------------------------------------------
 // Scopes 
-// If already the variables could be used then what was the problem , but scope causes propblem 
+// If already the variables could be used then what was the problem , but scope causes problem 
 // beacuse then variables become scope independent 
 // let and const are scope dependent {}-> block scope else without that its global scope 
 
