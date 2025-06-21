@@ -5,6 +5,7 @@
 // toLocalString -> 10 ,000 , 000 'en-IN' for indian
 
 /*
+
 Math is Itself an object 
 Math.random(); 0 -1 range 
 can even specify the (Math.random()*10)+ 1
@@ -17,3 +18,5 @@ use this when need a specific range
 
 const max = 20 , min = 10;
 console.log(Math.floor((Math.random()*(max - min + 1))+ min));
+
+console.log(typeof Math);

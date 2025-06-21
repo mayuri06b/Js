@@ -21,16 +21,16 @@ console.log(id === anotherId);
 
 // Primitive 
 /* 7types : String , Number , Boolean , null , undefined , Symbol , BigInt (bigNumber)*/
-//Refernce type (Non Primitive)
 
+//Refernce type (Non Primitive)
 // Arrays , Objects , Functions 
 // [] , {key : value} 
 
 // JS dynamically typed Language 
 
-
-// Function Object 
+// Function -> type id function only  
 const myFunc = function () {
     console.log("Hellow !!");
 }
+
 console.log(typeof myFunc);

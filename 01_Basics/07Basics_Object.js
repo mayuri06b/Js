@@ -1,9 +1,11 @@
 // singleton object 
 // Object.create();
 
-
 // object Literal 
-const objec1 = {name : "mayuri" , age : 12};
+const objec1 = {
+    name : "mayuri",
+    age : 12
+};
 console.log(objec1.name);
 console.log(objec1["name"]);
 
@@ -58,7 +60,6 @@ console.log(obj3.hasOwnProperty(3));
 console.log(Object.keys(obj3));
 console.log(Object.values(obj3));
 console.log(Object.entries(obj3));
-
 
 // -----------------------
 

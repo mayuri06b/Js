@@ -16,9 +16,8 @@ adminPhoneNo = 8902820222
 let noData ;
 
 console.table([adminName , adminPassword , adminPhoneNo , adminCity , noData]);
-/*
-Shows a beautiful way of printing in a table format 
-*/
+
+// Shows a beautiful way of printing in a table format 
 
 // no value -> by default gets value as undefined
 

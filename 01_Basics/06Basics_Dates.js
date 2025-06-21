@@ -3,7 +3,8 @@ let mydate = new Date();
 // Object in javaScript
 
 
-//Month starts fm 0 in jaavscript
+//Month starts from 0 
+
 // Sat Feb 24 2024
 let newDate = new Date(2024 , 1 , 24);
 console.log(newDate.toDateString());

@@ -1,6 +1,8 @@
-let score = "44"
+let score = "a44"
 let valueInNumber = Number(score);
 console.log(typeof score);
+
+console.log(valueInNumber);
 console.log(typeof valueInNumber);
 
 /*
