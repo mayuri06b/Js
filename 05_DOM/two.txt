@@ -1,0 +1,38 @@
+document.getElementById('title')
+// <h1 id="title">Hello World</h1> whatever html tag is their 
+
+document.getElementById('title').id/class/className 
+
+document.getElementById('title').getAttribute('id')
+document.getElementById('title').setAttribute('id', 'newTitle')
+
+
+const title = document.getElementById('title')
+
+title.style.color = 'red'
+
+title.textContent
+// it will include all the text inside the element, including hidden text and text in comments
+
+title.innerHTML 
+// this will include all the html tags inside the element will even if inside it any tag is their then will be displayed here
+
+title.innerText
+// text which is actually Visible to the user, it will not include hidden text or text in comments
+
+querySelector('#title')
+querySelector('.className')
+querySelector('h1')
+querySelector('input[type="text"]')
+p.firstchild 
+
+
+NodelIst and Collections are not pure arrays 
+so map cannot be used on them directly
+
+QueryselectorAll returns a NodeList
+when id tag is used , but when class is used it returns a HTMLCollection
+Convert the Collection to an array using Array.from() or spread operator
+const elements = document.querySelectorAll('.className')
+const elementsArray = Array.from(elements)
+const elementsArray = [...elements]

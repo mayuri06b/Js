@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part2</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thursday</div>
+    </div>
+</body>
+
+<script>
+    const parent = document.querySelector('.parent')
+    console.log(parent);
+    console.log(parent.children.length);
+
+    for (let index = 0; index < parent.children.length; index++) {
+        let element = parent.children[index];
+        console.log(element.innerText);   
+    }
+    parent.children[1].style.color = 'orange';
+    
+    console.log(parent.firstElementChild);
+    // gives html 
+    console.log(parent.lastElementChild);
+    // gives last 
+
+    let dayone = document.querySelector('.day')
+    console.log(dayone);
+    console.log(`Parent element ${dayone.parentElement}`);
+    console.log(dayone.parentElement);
+    console.log(dayone.nextElementSibling);
+    console.log("111111111111111111111111");
+    // It counts Enter as well and Comments as well 
+    
+    console.log(parent.childNodes);
+    
+    
+    
+
+
+</script>
+</html>
