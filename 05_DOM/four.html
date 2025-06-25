@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Last Lecture </title>
+</head>
+<body style="background-color: black; color:azure">
+    <ul class ="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+
+<!-- Yaha pr hum ek ListItem ko alag alag tareko se add karna Sikhenge  -->
+<!-- wo bhi alag alag Tareeko se  -->
+
+<script>
+    // Yaha pr yeh pura Tree Traverse kar raha hai , so Large Scale mein thoda DSA ko Use karna padega 
+
+    function addLanguage(langName) {
+        // Inner Html ke karan pura tree Traverse karna padega 
+        const newListItem = document.createElement('li');
+        const content = document.createTextNode(langName);
+        newListItem.appendChild(content);
+        document.querySelector('.language').appendChild(newListItem);
+    }
+
+    function optiAddLanguage(langName) {
+        // Yaha pr pura Tree traverse karna padega 
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    
+    optiAddLanguage('Go Lang')
+    addLanguage('C++');
+    
+    //Edit karna hai mujhe kisi Value ko 
+    const secondLang = document.querySelector('li:nth-child(2)')
+
+    const newli = document.createElement('li')
+    newli.textContent = 'Mojo'
+
+    secondLang.replaceWith(newli);
+
+    // edit first to TypeScript
+    const first = document.querySelector('li:first-child');
+    first.outerHTML = '<li>Typescript</li>';
+
+    // Remove 
+    const lastlanguage = document.querySelector('li:last-child');
+    lastlanguage.remove();
+
+</script>
+</html>

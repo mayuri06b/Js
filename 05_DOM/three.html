@@ -16,29 +16,41 @@
 
 <script>
     const parent = document.querySelector('.parent')
-    console.log(parent);
-    console.log(parent.children.length);
+    // console.log(parent);
+    // console.log(parent.children.length);
 
     for (let index = 0; index < parent.children.length; index++) {
         let element = parent.children[index];
-        console.log(element.innerText);   
+        // console.log(element.innerText);   
     }
     parent.children[1].style.color = 'orange';
     
-    console.log(parent.firstElementChild);
+    // console.log(parent.firstElementChild);
     // gives html 
-    console.log(parent.lastElementChild);
+    // console.log(parent.lastElementChild);
     // gives last 
 
     let dayone = document.querySelector('.day')
-    console.log(dayone);
-    console.log(`Parent element ${dayone.parentElement}`);
-    console.log(dayone.parentElement);
-    console.log(dayone.nextElementSibling);
-    console.log("111111111111111111111111");
+    // console.log(dayone);
+    // console.log(`Parent element ${dayone.parentElement}`);
+    // console.log(dayone.parentElement);
+    // console.log(dayone.nextElementSibling);
+    // console.log("111111111111111111111111");
     // It counts Enter as well and Comments as well 
+    const div = document.createElement('div');
+    div.className ='main';
+    div.id = '4';
+    div.setAttribute('title' , "my title");
+    div.style.backgroundColor = 'red';
+    div.style.padding = "10px";
+    // div.innerText ="Mayuri Focus!!";
+    const addText = document.createTextNode("Mayuri Yess !!")
+    div.appendChild(addText);
+    document.body.appendChild(div);
+    console.log(div);
+    // app ek Function Create kar sakte ho attributes pass kara Sakte ho and then bass tum jitne Chaho utnye Divs create kar sakte ho 
     
-    console.log(parent.childNodes);
+    // console.log(parent.childNodes);
     
     
     
