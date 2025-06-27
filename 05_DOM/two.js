@@ -1,7 +1,8 @@
 document.getElementById('title')
 // <h1 id="title">Hello World</h1> whatever html tag is their 
 
-document.getElementById('title').id/class/className 
+document.getElementById('title')
+// .id/class/className 
 
 document.getElementById('title').getAttribute('id')
 document.getElementById('title').setAttribute('id', 'newTitle')
@@ -27,12 +28,14 @@ querySelector('input[type="text"]')
 p.firstchild 
 
 
-NodelIst and Collections are not pure arrays 
-so map cannot be used on them directly
+// NodelIst and Collections are not pure arrays 
+// so map cannot be used on them directly
 
-QueryselectorAll returns a NodeList
-when id tag is used , but when class is used it returns a HTMLCollection
-Convert the Collection to an array using Array.from() or spread operator
+// QueryselectorAll returns a NodeList
+// when id tag is used , but when class is used it returns a HTMLCollection
+// Convert the Collection to an array using Array.from() or spread operator
+
 const elements = document.querySelectorAll('.className')
-const elementsArray = Array.from(elements)
-const elementsArray = [...elements]
+
+let elementsArray = Array.from(elements)
+elementsArray = [...elements]
