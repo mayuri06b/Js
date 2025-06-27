@@ -55,22 +55,37 @@
     // that Third Parameter sets the Capturing on which is top to bottom 
     // bubbling means inside to out 
 
-    document.getElementById('images').addEventListener('click' , function(e){
-        console.log('Inside the UL');
-    })
+    // document.getElementById('images').addEventListener('click' , function(e){
+    //     console.log('Inside the UL');
+    // })
 
-    document.getElementById('owl').addEventListener('click' , function(e){
-        console.log('Ohh Owl was Clicked !!');
-        e.stopPropagation() 
-        // more bubbling wont happen yane ki upar ke element pr nahi jayega 
+    // document.getElementById('owl').addEventListener('click' , function(e){
+    //     console.log('Ohh Owl was Clicked !!');
+    //     e.stopPropagation() 
+    //     // more bubbling wont happen yane ki upar ke element pr nahi jayega 
 
-    })
+    // })
 
-    document.getElementById('google').addEventListener('click' , function(e) {
-        console.log('gooogle Clicked !!');
-        e.preventDefault();
-        e.stopPropagation();
-    },false)
+    // document.getElementById('google').addEventListener('click' , function(e) {
+    //     console.log('gooogle Clicked !!');
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    // },false)
+
+    document.getElementById('images').addEventListener('click' , (e)=>{
+        // console.log(e.target.parentNode);
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        // removeIt.remove()
+        // pr ismein agar li pr click kiya to usa Parent i.e ul pura hi delete ho jayega 
+        // if()
+        // ismein li se ul diya fir uska Child wo jo removeIt wo 
+
+        // removeIt.parentNode.removeChild(removeIt)
+    }, false)
 
     
 
