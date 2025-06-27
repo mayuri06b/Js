@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Events</title>
+</head>
+<body style="background-color: #141414; color: aliceblue;">
+    <h2>Amazing Images </h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+    //All events in JS are sequential , unlike async 
+    // Not acceptable cause is not scalable using onclick Injected in Html file
+    
+    // onclick="alert('Owl')"
+    
+    // document.getElementById('owl').onclick= function(){
+    //     alert('Owl Clicked!!');
+    // }
+
+    // their can be Problems with onclick , 
+    // eventlisteners gives more Features of propagation 
+        
+    // document.getElementById('owl').addEventListener('click' , function(e){
+        // 'e' event Object is Important 
+        // console.log(e);
+        // PointerObject -> events are mainly browser abd Enviornment , when was clicked at which Time was clicked ,
+        // ek application bano , jab click kiya so kuch Create kar do basic tasks 
+
+
+    // },false)
+
+    // types , timestamp , defaultPrevented (form fill karte) , 
+    // target , toElement , srcElement , currentTarget , 
+    // clientX , clientY , screenX , screenY
+    // altkey , ctrlkey , shiftkey , keyCode  
+
+    //third Parameter , false , true 
+
+    // attachEvent() this was used when their were problems with Internet Explorer 
+    // jQuery -on (.on) was used 
+
+    // ---------Event Propagation----------
+    // - Event bubbling , event Capturing 
+    // that Third Parameter sets the Capturing on which is top to bottom 
+    // bubbling means inside to out 
+
+    document.getElementById('images').addEventListener('click' , function(e){
+        console.log('Inside the UL');
+    })
+
+    document.getElementById('owl').addEventListener('click' , function(e){
+        console.log('Ohh Owl was Clicked !!');
+        e.stopPropagation() 
+        // more bubbling wont happen yane ki upar ke element pr nahi jayega 
+
+    })
+
+    document.getElementById('google').addEventListener('click' , function(e) {
+        console.log('gooogle Clicked !!');
+        e.preventDefault();
+        e.stopPropagation();
+    },false)
+
+    
+
+
+
+</script>
+</html>
