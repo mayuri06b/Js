@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur code</title>
+</head>
+<body style="background-color: #141414; color: aliceblue;">
+    <h1>Iske Baad DSA recurrsion karenge!!</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    // handler -> ek function jiska Namm nah ho ek call back hi ahi 
+
+    // bass ek barr kaam karega
+    let saySlay = ()=>{
+        console.log("Mayuri its kkk");
+    } 
+    const changeText = ()=>{
+        document.querySelector('h1').innerHTML = 'Mayuri U da BEST'
+    }
+
+    const changeme = setTimeout(changeText, 2000) 
+     
+    // clearTimeout(changeme) 
+    // isko Chahiye reference 
+    
+    document.querySelector('#stop').addEventListener('click' , (e)=>{
+        clearTimeout(changeme)
+        console.log("Stoped");
+    })
+    
+    
+    // Core js functions nahi hai , Web Browser based hai yeh 
+
+</script>
+</html>

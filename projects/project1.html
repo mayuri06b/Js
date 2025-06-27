@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur code</title>
+</head>
+<body style="background-color: #141414; color: aliceblue;">
+    <h1>Color Changer Application</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+</body>
+<script>
+    function generateRandomColor(r,g,b) {
+        
+
+        let randomColor = r.toString()+','+g.toString()+','+b.toString()
+        console.log(randomColor);
+    }
+    
+    let startInterval ;
+    
+    const start = document.getElementById('start').addEventListener('click' , ()=>{
+        // chck kar rahe hai 
+        if(!startInterval){
+            startInterval = setInterval(()=>{
+            let min = 0 , max = 255
+            let r = Math.floor((Math.random()*(max - min + 1))+ min);
+            let g = Math.floor((Math.random()*(max - min + 1))+ min);
+            let b = Math.floor((Math.random()*(max - min + 1))+ min);
+            
+            document.querySelector('body').style.backgroundColor = `rgb(${r},${g},${b})`;
+            console.log('Mayuri', Date.now().toString());
+            },1000);
+        }
+        
+    
+    })
+    
+    const stop = document.getElementById('stop').addEventListener('click', ()=>{
+        clearInterval(startInterval);
+        console.log('stooped');
+        startInterval = null
+        // use ho gaya so ab usko derefernece kar rahe hai 
+    })
+    
+
+</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Aur code</title>
+</head>
+<body style="background-color: #141414; color: aliceblue;">
+    <h1>Baithi reh !!</h1>
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+</body>
+<script>
+    
+    let startInterval ;
+    
+    const start = document.getElementById('start').addEventListener('click' , ()=>{
+
+        startInterval = setInterval(()=>{
+            console.log('Mayuri', Date.now().toString());
+        },1000);
+    
+    })
+    
+
+    const stop = document.getElementById('stop').addEventListener('click', ()=>{
+        clearInterval(startInterval);
+        console.log('stooped');
+        startInterval = null
+    })
+    
+
+</script>
+</html>

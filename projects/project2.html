@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <div class="showTable"></div>
+</body>
+<script>
+    let showTable = document.querySelector('.showTable')
+    window.addEventListener('keydown' , (e)=>{
+        showTable.innerHTML = `<table>
+        <tr>
+            <th>key Pressed</th>
+            <th>keyname</th>
+            <th>code</th>
+        </tr>
+        <tr>
+            <td>${e.key}</td>
+            <td>${e.keyCode}</td>
+            <td>${e.key}</td>
+        </tr>
+        </table>`
+    })
+</script>
+</html>
