@@ -32,7 +32,7 @@ CB ko wo Queue mein daal deta hai
 task Queue -> fata fat cb ko call stack mein add kar deta hai 
 
 fetch() ->>> Promise aaja te hai so unke liye High Priority queue use hoti hai 
- is Process ko Event LOOp bolte hai cause JS assumes tobe multi threaded
+ is Process ko Event LOOp bolte hai cause JS assumes to be multi threaded
  
 
 */

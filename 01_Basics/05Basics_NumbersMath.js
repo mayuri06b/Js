@@ -7,7 +7,7 @@
 /*
 
 Math is Itself an object 
-Math.random(); 0 -1 range 
+Math.random(); 0 - 1 range 
 can even specify the (Math.random()*10)+ 1
 
 Math.floor((Math.random()*(max - min + 1))+ min);

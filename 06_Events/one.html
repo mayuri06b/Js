@@ -19,7 +19,9 @@
    </div>
 </body>
 <script>
+
     //All events in JS are sequential , unlike async 
+
     // Not acceptable cause is not scalable using onclick Injected in Html file
     
     // onclick="alert('Owl')"
@@ -34,7 +36,7 @@
     // document.getElementById('owl').addEventListener('click' , function(e){
         // 'e' event Object is Important 
         // console.log(e);
-        // PointerObject -> events are mainly browser abd Enviornment , when was clicked at which Time was clicked ,
+        // PointerObject -> events are mainly browser and Enviornment , when was clicked at which Time was clicked ,
         // ek application bano , jab click kiya so kuch Create kar do basic tasks 
 
 
@@ -44,6 +46,21 @@
     // target , toElement , srcElement , currentTarget , 
     // clientX , clientY , screenX , screenY
     // altkey , ctrlkey , shiftkey , keyCode  
+    function handleEvent(e) {
+        console.log('type:', e.type);
+        console.log('timeStamp:', e.timeStamp);
+        console.log('defaultPrevented:', e.defaultPrevented);
+        
+        console.log('target:', e.target);              // original element
+        console.log('srcElement:', e.srcElement);      // IE alias
+        console.log('currentTarget:', e.currentTarget);// listener target
+
+        console.log('client:', e.clientX, e.clientY);
+        console.log('screen:', e.screenX, e.screenY);
+
+        console.log('modifiers:', e.altKey, e.ctrlKey, e.shiftKey);
+        console.log('keyCode:', e.keyCode);
+    }
 
     //third Parameter , false , true 
 
@@ -51,6 +68,7 @@
     // jQuery -on (.on) was used 
 
     // ---------Event Propagation----------
+
     // - Event bubbling , event Capturing 
     // that Third Parameter sets the Capturing on which is top to bottom 
     // bubbling means inside to out 
@@ -86,10 +104,6 @@
 
         // removeIt.parentNode.removeChild(removeIt)
     }, false)
-
-    
-
-
 
 </script>
 </html>

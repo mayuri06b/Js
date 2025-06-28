@@ -6,6 +6,9 @@ const objec1 = {
     name : "mayuri",
     age : 12
 };
+
+// objectName.key
+
 console.log(objec1.name);
 console.log(objec1["name"]);
 
@@ -25,6 +28,7 @@ console.log(objec1.functionName());
 
 
 // ---------------------------------
+
 // const tinderUser = new Object();  
 // singleton Object
 
