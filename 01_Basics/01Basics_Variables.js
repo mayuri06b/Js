@@ -1,8 +1,10 @@
-// Starting with Variables the simplest way of Storing the items values which will be used in our project 
-// Simple way of Storing the data 
+// way to store data generated , operated during the project 
 
-// const -> no changes in the values are allowed 
+
+// const -> fixed
+
 // var -> is not used now in latest Java Script beacuse of the functional and Block scope Issue 
+
 // <variableName> <value>; -> No error 
 
 let adminPassword = "temp123";
@@ -13,7 +15,7 @@ let adminCity = "Nagpur"
 
 adminPhoneNo = 8902820222
 
-let noData ;
+let noData;
 
 console.table([adminName , adminPassword , adminPhoneNo , adminCity , noData]);
 
