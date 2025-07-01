@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React</title>
+</head>
+<body>
+    <button>Button Clicked </button>
+    
+</body>
+<script>
+    class React {
+        constructor(){
+            this.library = 'React'
+            this.server = 'https://localhoast:3000'
+            
+            // requirement
+            // jaise hi page load ho ek object ban jaye 
+            // button ka refernce mil jaye aur 
+            // button click pr ek message
+            
+            document.querySelector('button')
+            .addEventListener('click' , this.handleClick.bind(this))
+        }
+        handleClick(){
+            console.log(`Button was Clicked`);
+            console.log(this.server);
+            // so ismein button ka refernce hai 
+            // ismein Bind keyword 
+            // attach karo apne sath
+            // sab ka access mil jata hai 
+        }
+    }
+    const app = new React()
+</script>
+</html>
