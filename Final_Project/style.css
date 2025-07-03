@@ -17,7 +17,7 @@ body {
     display: flex;
     padding: 25px;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
     align-items: center;
     border-right: 1px solid #d1cfcc;
 }
@@ -79,7 +79,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
     gap: 20px;
     padding: 20px;
-    background-color: #fdfefe;
+    background-color: rgb(241, 247, 248);
 }
 
 /* Note card container */
@@ -144,4 +144,16 @@ input {
     border: 1.4px solid black;
 }
 
-
+.deleteAll-button {
+    padding: 8px;
+    width: 100px;
+    border-radius: 25px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #d14a4a;
+    color: white;
+    font-size: 15px;
+    border: none;
+}
