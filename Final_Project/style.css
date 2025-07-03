@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(241, 247, 248);
+    display: flex;
+}
+
+.side-bar{
+    background-color: rgb(241, 247, 248);
+    position: fixed;
+    height: 100vh;        /* full vertical height */
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    border-right: 1px solid #d1cfcc;
+}
+
+.add-button {
+    background-color: rgb(35, 35, 35);
+    color: white;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    border: none;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+.color-button {
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    border: none;
+    font-size: 25px;
+    font: 100;
+}
+#yellow{
+    background-color: #f1d96f;
+}
+#purple{
+    background-color: #8b6ff1;
+}
+#orange{
+    background-color: #f1bf6f;
+}
+#red{
+    background-color: #f16f6f;
+}
+
+.main-section {
+  flex: 1;
+  margin-left: 80px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background-color: rgb(241, 247, 248);
+  padding: 20px;
+}
+
+.page-header {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Content */
+.content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background-color: #fdfefe;
+}
+
+/* Note card container */
+.note {
+    width: 290px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px #1e1e1e1a;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* Input fields */
+input {
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+}
+
+.title-content {
+    height: 40px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.input-content {
+    outline: none;
+    height: 150px;
+    width: 275px;
+    border-radius: 8px;
+    resize: none;
+    border: none;
+    padding: 8px;
+    background-color: rgba(255,255,255,0.8);
+}
+
+
+/* Save Button */
+.save-button {
+    padding: 8px;
+    width: 100px;
+    border-radius: 25px;
+    align-self: flex-end;
+    background-color: rgb(35, 35, 35);
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    border: none;
+}
+
+.edit-button {
+    padding: 8px;
+    width: 100px;
+    border-radius: 25px;
+    align-self: flex-end;
+    background-color: rgb(251, 251, 251);
+    color: black;
+    border: 1.4px solid black;
+}
+
+
